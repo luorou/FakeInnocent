@@ -6,9 +6,10 @@ struct Index {
   build() {
     Row() {
       Column() {
-        Text(this.message)
-          .fontSize(50)
-          .fontWeight(FontWeight.Bold)
+        Image($r('app.media.icon_tab_home_normal'))
+          .width(110).height(110).margin(15)
+          .colorFilter(Color.Blue)
+          .overlay('png', { align: Alignment.Bottom, offset: { x: 0, y: 20 } })
       }
       .width('100%')
     }
